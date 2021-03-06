@@ -10,10 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_01_013252) do
+ActiveRecord::Schema.define(version: 2021_03_06_232535) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "logs", force: :cascade do |t|
+    t.bigint "query_id", null: false
+    t.string "nombre_base"
+    t.string "nombre_usuario"
+    t.string "ip_log"
+    t.datetime "time_stamp_inicio_sesion"
+    t.datetime "time_stamp_log"
+    t.string "ataque"
+    t.integer "tipo_ataque"
+    t.index ["query_id"], name: "index_logs_on_query_id"
+  end
+
+  create_table "queries", force: :cascade do |t|
+    t.string "nombre_query"
+    t.string "comando"
+    t.string "duracion"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -23,6 +41,9 @@ ActiveRecord::Schema.define(version: 2021_03_01_013252) do
     t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.datetime "fecha_nacimiento"
+    t.string "cedula"
+    t.string "direccion_domicilio"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
