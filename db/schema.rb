@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2021_03_06_232535) do
     t.string "ip_log"
     t.datetime "time_stamp_inicio_sesion"
     t.datetime "time_stamp_log"
-    t.string "ataque"
+    t.boolean "ataque"
     t.integer "tipo_ataque"
     t.index ["query_id"], name: "index_logs_on_query_id"
   end
