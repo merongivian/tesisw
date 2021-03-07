@@ -1,1 +1,7 @@
-Resumen semanal
+<h1>Ataques Encontrados</h1>
+<%= column_chart @today_logs.group_by_hour(:time_stamp_log).count.transform_keys { |key| key.strftime("%H") } %>
+<%= pie_chart @today_logs.group(:ataque).count.except(nil) %>
+
+<h1>Ataques Detectados</h1>
+<%= column_chart @today_logs_with_attacks.group_by_hour(:time_stamp_log).count.transform_keys { |key| key.strftime("%H") } %>
+<%= pie_chart @today_logs_with_attacks.group(:tipo_ataque).count.except(nil) %>

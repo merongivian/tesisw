@@ -62,6 +62,7 @@ GEM
       msgpack (~> 1.0)
     builder (3.2.4)
     byebug (11.1.3)
+    chartkick (3.4.2)
     concurrent-ruby (1.1.8)
     crass (1.0.6)
     devise (4.7.3)
@@ -74,6 +75,8 @@ GEM
     ffi (1.14.2)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    groupdate (5.2.2)
+      activesupport (>= 5)
     i18n (1.8.9)
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.2)
@@ -193,7 +196,9 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
+  chartkick (~> 3.4)
   devise (~> 4.7)
+  groupdate (~> 5.2)
   jbuilder (~> 2.7)
   listen (~> 3.2)
   pg (>= 0.18, < 2.0)

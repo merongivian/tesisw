@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2021_03_06_232535) do
   enable_extension "plpgsql"
 
   create_table "logs", force: :cascade do |t|
-    t.bigint "query_id", null: false
+    t.bigint "query_id"
     t.string "nombre_base"
     t.string "nombre_usuario"
     t.string "ip_log"
