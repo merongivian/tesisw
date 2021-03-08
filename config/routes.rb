@@ -5,4 +5,9 @@ Rails.application.routes.draw do
   get '/resumen_semanal' => 'pages#resumen_semanal'
   get '/ataques' => 'pages#ataques'
   get '/herramientas_de_analisis' => 'pages#herramientas_de_analisis'
+
+  namespace :api do
+    resources :logs, only: :create
+    resources :queries, only: :create
+  end
 end
