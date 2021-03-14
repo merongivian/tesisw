@@ -1,1 +1,20 @@
-ataques
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Usuario</th>
+      <th scope="col">IP</th>
+      <th scope="col">Tipo de Ataque</th>
+      <th scope="col">Timestamp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @logs.each do |log| %>
+      <tr>
+        <td><%= log.nombre_usuario %></td>
+        <td><%= log.ip_log %></td>
+        <td><%= log.tipo_ataque %></td>
+        <td><%= log.time_stamp_log.strftime("%m/%d/%Y a las %I:%M%p") %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

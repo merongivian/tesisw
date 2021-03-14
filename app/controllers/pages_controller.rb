@@ -9,6 +9,7 @@ class PagesController < ApplicationController
   end
 
   def ataques
+    @logs = Log.where(ataque: true)
   end
 
   def herramientas_de_analisis
