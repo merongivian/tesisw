@@ -32,3 +32,6 @@
     <%= link_to 'siguiente', ataques_path(page: @table_page + 1) %>
   <% end %>
 <% end %>
+
+<h1>Ataques Detectados Hoy</h1>
+<%= line_chart @today_logs_with_attacks.group_by_hour(:time_stamp_log).count.transform_keys { |key| key.strftime("%H") } %>
