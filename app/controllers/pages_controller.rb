@@ -23,5 +23,6 @@ class PagesController < ApplicationController
       Log.where("DATE(time_stamp_log) = ?", Time.zone.today)
     @today_logs_with_attacks =
       @today_logs.where(ataque: true)
+    @last_logs =  Log.where(ataque: true).order(:created_at).last 3
   end
 end

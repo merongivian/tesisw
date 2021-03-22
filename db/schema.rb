@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_06_232535) do
+ActiveRecord::Schema.define(version: 2021_03_22_001137) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(version: 2021_03_06_232535) do
     t.datetime "time_stamp_log"
     t.boolean "ataque"
     t.integer "tipo_ataque"
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.index ["query_id"], name: "index_logs_on_query_id"
   end
 
