@@ -40,21 +40,5 @@
 <br/>
 
 <div id="accordion">
-  <% @last_logs.each_with_index do |log, i| %>
-    <div class="card">
-      <div class="card-header" id="heading<%= i.to_s %>">
-        <h5 class="mb-0">
-          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse<%= i.to_s %>" aria-expanded="false" aria-controls="collapse<%= i.to_s %>">
-            Alerta desde <%= log.ip_log %>
-          </button>
-        </h5>
-      </div>
-
-      <div id="collapse<%= i.to_s %>" class="collapse" aria-labelledby="heading<%= i.to_s %>" data-parent="#accordion">
-        <div class="card-body">
-          Injeccion detectada: <%= log.tipo_ataque %>
-        </div>
-      </div>
-    </div>
-  <% end %>
+  <%= render @alert_logs %>
 </div>
