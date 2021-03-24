@@ -12,25 +12,28 @@
   Log.create nombre_usuario: "maria #{i}", ataque: true, tipo_ataque: 4, time_stamp_log: Time.zone.yesterday
 end
 
-Log.create ataque: false, tipo_ataque: 1, time_stamp_log: Time.zone.today.beginning_of_day + 1.hour, ip_log: '127.0.0.1'
-Log.create ataque: false, tipo_ataque: 2, time_stamp_log: Time.zone.today.beginning_of_day + 2.hour, ip_log: '127.0.0.2'
-Log.create ataque: false, tipo_ataque: 3, time_stamp_log: Time.zone.today.beginning_of_day + 3.hour, ip_log: '127.0.0.3'
-Log.create ataque: false, tipo_ataque: 4, time_stamp_log: Time.zone.today.beginning_of_day + 4.hour, ip_log: '127.0.0.4'
-
-Log.create ataque: true, tipo_ataque: 2, time_stamp_log: Time.zone.today.beginning_of_day + 1.hour, ip_log: '127.0.0.5'
-Log.create ataque: true, tipo_ataque: 4, time_stamp_log: Time.zone.today.beginning_of_day + 1.hour, ip_log: '127.0.0.6'
-
-Log.create ataque: true, tipo_ataque: 1, time_stamp_log: Time.zone.today.beginning_of_day + 2.hour, ip_log: '127.0.0.7'
-Log.create ataque: true, tipo_ataque: 3, time_stamp_log: Time.zone.today.beginning_of_day + 2.hour, ip_log: '127.0.0.8'
-Log.create ataque: true, tipo_ataque: 4, time_stamp_log: Time.zone.today.beginning_of_day + 2.hour, ip_log: '127.0.0.9'
-
-Log.create ataque: true, tipo_ataque: 1, time_stamp_log: Time.zone.today.beginning_of_day + 3.hour, ip_log: '127.0.2.1'
-Log.create ataque: true, tipo_ataque: 2, time_stamp_log: Time.zone.today.beginning_of_day + 3.hour, ip_log: '127.0.2.2'
-
-Log.create ataque: true, tipo_ataque: 1, time_stamp_log: Time.zone.today.beginning_of_day + 4.hour, ip_log: '127.0.2.3'
-Log.create ataque: true, tipo_ataque: 3, time_stamp_log: Time.zone.today.beginning_of_day + 4.hour, ip_log: '127.0.2.4'
-Log.create ataque: true, tipo_ataque: 4, time_stamp_log: Time.zone.today.beginning_of_day + 4.hour, ip_log: '127.0.2.5'
-
-Log.create ataque: true, tipo_ataque: 4, time_stamp_log: Time.zone.today.beginning_of_day + 5.hour, ip_log: '127.0.2.6'
-Log.create ataque: true, tipo_ataque: 4, time_stamp_log: Time.zone.today.beginning_of_day + 5.hour, ip_log: '127.0.2.7'
-Log.create ataque: true, tipo_ataque: 4, time_stamp_log: Time.zone.today.beginning_of_day + 5.hour, ip_log: '127.0.2.8'
+Log.create nombre_base: 'prueba' , nombre_usuario: 'cesar' , ip_log: '127.0.0.1' , time_stamp_log: Time.zone.today.beginning_of_day + 1.hour , ataque: false, tipo_ataque: 0
+Log.create nombre_base: 'prueba' , nombre_usuario: 'cesar' , ip_log: '127.0.0.1' , time_stamp_log: Time.zone.today.beginning_of_day + 1.hour , ataque: false, tipo_ataque: 0
+Log.create nombre_base: 'prueba' , nombre_usuario: 'cesar' , ip_log: '127.0.0.2' , time_stamp_log: Time.zone.today.beginning_of_day + 1.hour , ataque: true, tipo_ataque: 1
+Log.create nombre_base: 'prueba' , nombre_usuario: 'cesar' , ip_log: '127.0.0.3' , time_stamp_log: Time.zone.today.beginning_of_day + 1.hour , ataque: true, tipo_ataque: 2
+Log.create nombre_base: 'prueba' , nombre_usuario: 'cesar' , ip_log: '127.0.0.1' , time_stamp_log: Time.zone.today.beginning_of_day + 1.hour , ataque: false, tipo_ataque: 0
+Log.create nombre_base: 'prueba' , nombre_usuario: 'cesar' , ip_log: '127.0.0.3' , time_stamp_log: Time.zone.today.beginning_of_day + 2.hour , ataque: true, tipo_ataque: 2
+Log.create nombre_base: 'prueba' , nombre_usuario: 'cesar' , ip_log: '127.0.0.2' , time_stamp_log: Time.zone.today.beginning_of_day + 3.hour , ataque: false, tipo_ataque: 0
+Log.create nombre_base: 'prueba' , nombre_usuario: 'cesar' , ip_log: '127.0.0.3' , time_stamp_log: Time.zone.today.beginning_of_day + 4.hour , ataque: true, tipo_ataque: 3
+Log.create nombre_base: 'prueba' , nombre_usuario: 'cesar' , ip_log: '127.0.0.4' , time_stamp_log: Time.zone.today.beginning_of_day + 5.hour , ataque: true, tipo_ataque: 4
+Log.create nombre_base: 'prueba' , nombre_usuario: 'cesar' , ip_log: '127.0.0.5' , time_stamp_log: Time.zone.today.beginning_of_day + 2.hour , ataque: false, tipo_ataque: 0
+Log.create nombre_base: 'prueba' , nombre_usuario: 'cesar' , ip_log: '127.0.0.6' , time_stamp_log: Time.zone.today.beginning_of_day + 3.hour , ataque: true, tipo_ataque: 1
+Log.create nombre_base: 'prueba' , nombre_usuario: 'cesar' , ip_log: '127.0.0.7' , time_stamp_log: Time.zone.today.beginning_of_day + 4.hour , ataque: false, tipo_ataque: 0
+Log.create nombre_base: 'prueba' , nombre_usuario: 'cesar' , ip_log: '127.0.0.5' , time_stamp_log: Time.zone.today.beginning_of_day + 5.hour , ataque: true, tipo_ataque: 2
+Log.create nombre_base: 'prueba' , nombre_usuario: 'cesar' , ip_log: '127.0.0.6' , time_stamp_log: Time.zone.today.beginning_of_day + 2.hour , ataque: false, tipo_ataque: 0
+Log.create nombre_base: 'prueba' , nombre_usuario: 'cesar' , ip_log: '127.0.0.8' , time_stamp_log: Time.zone.today.beginning_of_day + 4.hour , ataque: true, tipo_ataque: 4
+Log.create nombre_base: 'prueba' , nombre_usuario: 'cesar' , ip_log: '127.0.0.1' , time_stamp_log: Time.zone.today.beginning_of_day + 5.hour , ataque: false, tipo_ataque: 0
+Log.create nombre_base: 'prueba' , nombre_usuario: 'cesar' , ip_log: '127.0.0.3' , time_stamp_log: Time.zone.today.beginning_of_day + 11.hour , ataque: true, tipo_ataque: 2
+Log.create nombre_base: 'prueba' , nombre_usuario: 'cesar' , ip_log: '127.0.0.4' , time_stamp_log: Time.zone.today.beginning_of_day + 10.hour , ataque: false, tipo_ataque: 0
+Log.create nombre_base: 'prueba' , nombre_usuario: 'cesar' , ip_log: '127.0.0.5' , time_stamp_log: Time.zone.today.beginning_of_day + 12.hour , ataque: true, tipo_ataque: 3
+Log.create nombre_base: 'prueba' , nombre_usuario: 'cesar' , ip_log: '127.0.0.1' , time_stamp_log: Time.zone.today.beginning_of_day + 13.hour , ataque: false, tipo_ataque: 0
+Log.create nombre_base: 'prueba' , nombre_usuario: 'cesar' , ip_log: '127.0.0.3' , time_stamp_log: Time.zone.today.beginning_of_day + 14.hour , ataque: true, tipo_ataque: 4
+Log.create nombre_base: 'prueba' , nombre_usuario: 'cesar' , ip_log: '127.0.0.4' , time_stamp_log: Time.zone.today.beginning_of_day + 15.hour , ataque: false, tipo_ataque: 0
+Log.create nombre_base: 'prueba' , nombre_usuario: 'cesar' , ip_log: '127.0.0.5' , time_stamp_log: Time.zone.today.beginning_of_day + 16.hour , ataque: true, tipo_ataque: 2
+Log.create nombre_base: 'prueba' , nombre_usuario: 'cesar' , ip_log: '127.0.0.2' , time_stamp_log: Time.zone.today.beginning_of_day + 17.hour , ataque: false, tipo_ataque: 0
+Log.create nombre_base: 'prueba' , nombre_usuario: 'cesar' , ip_log: '127.0.0.3' , time_stamp_log: Time.zone.today.beginning_of_day + 19.hour , ataque: false, tipo_ataque: 0
