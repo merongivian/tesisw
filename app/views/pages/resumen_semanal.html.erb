@@ -1,6 +1,10 @@
 <h1>Ataques Encontrados</h1>
 <%= column_chart @today_logs.group_by_hour(:time_stamp_log).count.transform_keys { |key| key.strftime("%H") } %>
-<%= pie_chart @today_logs.group(:ataque).count.except(nil) %>
+<% pie_chart_logs = @today_logs.group(:ataque).count.except(nil) %>
+<% pie_chart_logs[:ataque] = pie_chart_logs.delete true %>
+<% pie_chart_logs[:anomalia] = pie_chart_logs.delete false %>
+
+<%= pie_chart pie_chart_logs %>
 
 <h1>Ataques Detectados</h1>
 <%= column_chart @today_logs_with_attacks.group_by_hour(:time_stamp_log).count.transform_keys { |key| key.strftime("%H") } %>
