@@ -15,6 +15,12 @@ class PagesController < ApplicationController
   end
 
   def herramientas_de_analisis
+    @analisis_result = params[:analisis_result] || ''
+  end
+
+  def analyze_website
+    analisis_result = `#{params[:url]}`
+    redirect_to herramientas_de_analisis_path(analisis_result: analisis_result)
   end
 
   private
