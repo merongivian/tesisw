@@ -8,7 +8,7 @@ class AddLogs < ActiveRecord::Migration[6.0]
       t.datetime :time_stamp_inicio_sesion
       t.datetime :time_stamp_log
       t.boolean :ataque
-      t.integer :tipo_ataque
+      t.string :tipo_ataque
     end
   end
 end

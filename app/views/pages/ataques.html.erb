@@ -1,8 +1,13 @@
-<%= turbo_frame_tag "logs-table-#{@table_page}" do %>
+
+<div class="row">
+  <div class="column">
+    <div class="container_2">
+    <%= turbo_frame_tag "logs-table-#{@table_page}" do %>
   <table class="table">
     <thead>
       <tr>
         <th scope="col">Usuario</th>
+        <th scope="col">Base</th>
         <th scope="col">IP</th>
         <th scope="col">Tipo de Ataque</th>
         <th scope="col">Timestamp</th>
@@ -12,6 +17,7 @@
       <% @logs.each do |log| %>
         <tr>
           <td><%= log.nombre_usuario %></td>
+          <td><%= log.nombre_base %></td>
           <td><%= log.ip_log %></td>
           <td><%= log.tipo_ataque %></td>
           <td><%= log.time_stamp_log.strftime("%m/%d/%Y a las %I:%M%p") %></td>
@@ -32,13 +38,18 @@
     <%= link_to 'siguiente', ataques_path(page: @table_page + 1) %>
   <% end %>
 <% end %>
-
-<h1>Ataques Detectados Hoy</h1>
-<%= line_chart @today_logs_with_attacks.group_by_hour(:time_stamp_log).count.transform_keys { |key| key.strftime("%H") } %>
-
-<br/>
-<br/>
-
-<div id="accordion">
+  </div>
+  </div>
+  <div class="column">
+    <div class="container_2">
+    <h1>Ataques Detectados Hoy</h1>
+<%= line_chart @today_logs_with_attacks.group_by_hour(:time_stamp_log).count.transform_keys { |key| key.strftime("%H:00") }, xtitle: 'Hora del Día', ytitle: 'Número de Ataques' %>
+    
+  </div>
+  <div class="container_2">
+    <div id="accordion">
   <%= render @alert_logs %>
+</div>
+  </div>
+  </div>
 </div>

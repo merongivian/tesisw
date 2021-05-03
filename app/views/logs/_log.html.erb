@@ -9,7 +9,14 @@
 
   <div id="collapse<%= log.id.to_s %>" class="collapse" aria-labelledby="heading<%= log.id.to_s %>" data-parent="#accordion">
     <div class="card-body">
-      Injeccion detectada: <%= log.tipo_ataque %>
+
+      <h5> <label class="thick">Injección detectada: </label> <%= log.tipo_ataque %> </h5>
+      
+      <label class="thick">Nombre de Usuario: </label> <%= log.nombre_usuario%> <br>
+      <label class="thick">Base de Datos: </label> <%= log.nombre_base%> <br>
+      <label class="thick">Fecha y Hora: </label> <%= log.time_stamp_log%> <br>
+      
+
     </div>
   </div>
 </div>
