@@ -1,5 +1,5 @@
 {
-  "name": "tesisw",
+  "name": "Tesis",
   "private": true,
   "dependencies": {
     "@babel/preset-react": "^7.12.13",
