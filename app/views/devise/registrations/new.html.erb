@@ -10,13 +10,10 @@
     <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'field' %>
 
     <label>Contraseña</label>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
     <%= f.password_field :password, autocomplete: "new-password" , class: 'field'%>
 
     <label>Confirmar Contraseña</label>
     <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'field' %>
- 
 
   <div class="actions">
     <%= f.submit "Sign up", class: 'button' %>
