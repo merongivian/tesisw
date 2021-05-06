@@ -16,20 +16,17 @@
 
 
 h1 {
-	color: grey
   	font-size: 300%;
   	text-align: center;
 }
 
 h2 {
-	color: grey
   	font-size: 300%;
   	text-align: center;
 }
 
 label {
-	color: grey,
-  	font-size: 200%;
+  	font-size: 100%;
   	text-align: center;
 }
 
