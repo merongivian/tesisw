@@ -1,3 +1,3 @@
 class Log < ApplicationRecord
-  belongs_to :query
+  belongs_to :query, optional: true
 end
