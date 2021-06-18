@@ -1,6 +1,7 @@
 
 <div class="container_2">
 <div class="container_2">
+	<h2>Anomalías Encontradas</h1>
 <div class="row">
 	<div class="column">
 		<%= column_chart @today_logs.group_by_hour(:time_stamp_log).count.transform_keys { |key| key.strftime("%H:00") }, xtitle: 'Hora del día (Formato de 24h)', ytitle: 'Número de Anomalías' %>
@@ -14,10 +15,10 @@
 </div>
 </div>
 
-<h2>Anomalías Encontradas</h1>
+
 
 <div class="container_2">
-
+<h2>Ataques Detectados</h1>
 <div class="row">
 	<div class="column">
 		<%= column_chart @today_logs_with_attacks.group_by_hour(:time_stamp_log).count.transform_keys { |key| key.strftime("%H:00") }, xtitle: 'Hora del día (Formato de 24h)', ytitle: 'Número de Ataques' %>
@@ -30,6 +31,8 @@
 
 </div>
 
-<h2>Ataques Detectados</h1>
+
 
 </div>
+
+
