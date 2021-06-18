@@ -6,7 +6,7 @@ class PagesController < ApplicationController
   end
 
   def ataques
-    per_page = 8
+    per_page = 6
 
     @table_page = params[:page]&.to_i || 1
     @logs = Log.where(ataque: true).paginate(page: @table_page, per_page: per_page)

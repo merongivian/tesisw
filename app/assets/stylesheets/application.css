@@ -25,6 +25,10 @@ h2 {
   	text-align: center;
 }
 
+h3 {
+    text-align: center;
+}
+
 label {
   	font-size: 100%;
   	text-align: center;
@@ -40,6 +44,12 @@ img {
 label.thick {
    font-weight: bold;
 }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
 
 .field {
   width: 100%;
@@ -101,7 +111,31 @@ label.thick {
 
 /* Clear floats after the columns */
 .row:after {
+  height: 100%;
   content: "";
   display: table;
   clear: both;
+}
+
+
+#logs {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#logs td, #logs th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#logs tr:nth-child(even){background-color: #f2f2f2;}
+
+#logs tr:hover {background-color: #ddd;}
+
+#logs th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4d8bd9;
+  color: white;
 }

@@ -1,0 +1,1272 @@
+1 ->  set datestyle='ISO'
+
+2 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+3 ->  select oid,typname from pg_type
+
+4 ->  select * from carpeta order by carp_orden asc
+
+5 ->  SELECT ESTA_DESC, ESTA_CODI FROM ESTADO ORDER BY 1
+
+6 -> 
+7 -> 
+8 -> 
+9 ->  set datestyle='ISO'
+
+10 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+11 ->  select oid,typname from pg_type
+
+12 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+13 ->  select oid,typname from pg_type
+
+14 ->  select * from carpeta order by carp_orden asc
+
+15 ->  SELECT ESTA_DESC, ESTA_CODI FROM ESTADO ORDER BY 1
+
+16 -> 
+17 -> 
+18 -> 
+19 -> 
+20 -> 
+21 -> 
+22 ->  set datestyle='ISO'
+
+23 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+24 ->  select oid,typname from pg_type
+
+25 ->  select * from carpeta order by carp_orden asc
+
+26 ->  SELECT ESTA_DESC, ESTA_CODI FROM ESTADO ORDER BY 1
+
+27 -> 
+28 -> 
+29 -> 
+30 ->  set datestyle='ISO'
+
+31 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+32 ->  select oid,typname from pg_type
+
+33 ->  select count(*) as "leidos", 2 as esta_codi from radicado where esta_codi=2 and radi_usua_actu=50013493 and radi_leido = 0 and radi_nume_radi not in (select radi_nume_radi from tarea where estado=1 and usua_codi_ori=50013493) group by 2
+
+34 -> 
+35 -> 
+36 -> 
+37 ->  set datestyle='ISO'
+
+38 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+39 ->  select oid,typname from pg_type
+
+40 ->  select * from carpeta order by carp_orden asc
+
+41 ->  SELECT ESTA_DESC, ESTA_CODI FROM ESTADO ORDER BY 1
+
+42 -> 
+43 -> 
+44 -> 
+45 ->  set datestyle='ISO'
+
+46 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+47 ->  select oid,typname from pg_type
+
+48 ->  select count(*) "leidos", 6 as esta_codi from radicado where esta_codi=6 and radi_nume_radi=radi_nume_temp and radi_leido = 0 and radi_usua_actu=50013493
+
+49 -> 
+50 -> 
+51 -> 
+52 ->  set datestyle='ISO'
+
+53 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+54 ->  select oid,typname from pg_type
+
+55 ->  select * from radicado where radi_nume_radi=20200000200000099490
+
+56 ->  select r.*, e.esta_desc, tr.trad_descr,
+
+	                     radi_fech_asig::date - CURRENT_DATE as num_dias
+
+	                     from radicado r left outer join estado e on r.esta_codi=e.esta_codi
+
+	                     left outer join tiporad tr on r.radi_tipo = tr.trad_codigo
+
+	                     where r.RADI_NUME_RADI=20200000200000099490
+
+57 ->  select * from datos_usuarios where  usua_codi=50013493
+
+58 ->  select fecha_maxima from tarea where radi_nume_radi in (20200000200000099490) and usua_codi_dest = 50013493
+
+59 ->  select radi_leido as dato from RADICADO where RADI_NUME_RADI=20200000200000099490
+
+60 ->  select tarea_codi as num from tarea where radi_nume_radi=20200000200000099490 and 50013493 in (usua_codi_dest,usua_codi_ori)
+
+61 ->  select trad_descr, trad_codigo from tiporad where trad_tipo='S' and trad_inst_codi in (0,4) order by trad_descr
+
+62 ->  select usua_nombre, usua_apellido, usua_abr_titulo, usua_cargo, usua_institucion, usua_area, inst_codi where 1=1
+
+63 ->  select usua_nombre, usua_apellido, usua_abr_titulo, usua_cargo, usua_institucion, usua_area, inst_codi
+
+			from usuarios_radicado where radi_nume_radi=20200000200000099490 and radi_usua_tipo=2
+
+64 ->  select usua_nombre, usua_apellido, usua_abr_titulo, usua_cargo, usua_institucion, usua_area, inst_codi
+
+			from usuarios_radicado where radi_nume_radi=20200000200000099490 and radi_usua_tipo=3
+
+65 ->  select trd_codi from trd_radicado where radi_nume_radi=20200000200000099490 and depe_codi=20
+
+66 ->  select cat_descr, cat_codi from categoria order by cat_descr
+
+67 ->  select cod_descripcion, cod_codi from codificacion where inst_codi in (0,4) order by cod_descripcion
+
+68 -> 
+69 -> 
+70 -> 
+71 ->  set datestyle='ISO'
+
+72 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+73 ->  select oid,typname from pg_type
+
+74 ->  select * from radicado where radi_nume_radi=20200000200000099490
+
+75 ->  select r.*, e.esta_desc, tr.trad_descr,
+
+	                     radi_fech_asig::date - CURRENT_DATE as num_dias
+
+	                     from radicado r left outer join estado e on r.esta_codi=e.esta_codi
+
+	                     left outer join tiporad tr on r.radi_tipo = tr.trad_codigo
+
+	                     where r.RADI_NUME_RADI=20200000200000099490
+
+76 ->  select * from datos_usuarios where  usua_codi=50013493
+
+77 ->  select fecha_maxima from tarea where radi_nume_radi in (20200000200000099490) and usua_codi_dest = 50013493
+
+78 ->  select radi_leido as dato from RADICADO where RADI_NUME_RADI=20200000200000099490
+
+79 ->  select tarea_codi as num from tarea where radi_nume_radi=20200000200000099490 and 50013493 in (usua_codi_dest,usua_codi_ori)
+
+80 ->  select radi_leido as dato from RADICADO where RADI_NUME_RADI=20200000200000099490
+
+81 ->  select radi_nume_text as dato from RADICADO where RADI_NUME_RADI=20200000200000161251
+
+82 ->  select radi_leido as dato from RADICADO where RADI_NUME_RADI=20200000200000161251
+
+83 -> 
+84 -> 
+85 -> 
+86 ->  set datestyle='ISO'
+
+87 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+88 ->  select oid,typname from pg_type
+
+89 ->  set datestyle='ISO'
+
+90 ->  select d.depe_codi, d.depe_nomb, d.dep_sigla, coalesce(d.depe_plantilla,d.depe_codi) as "depe_plantilla"
+
+	                         , d.depe_pie1, c.nombre, depe_codi_padre, dep_central
+
+	                    from dependencia d left outer join ciudad c on d.depe_pie1=c.id::text
+
+	                    where d.depe_codi=20
+
+91 ->  select usua_codi from permiso_usuario where id_permiso=5 and usua_codi=50013493
+
+92 -> 
+93 ->  set datestyle='ISO'
+
+94 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606324991oappID'
+
+95 ->  select oid,typname from pg_type
+
+96 -> 
+97 -> 
+98 ->  set datestyle='ISO'
+
+99 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606324991oappID'
+
+100 ->  select oid,typname from pg_type
+
+101 ->  select * from carpeta order by carp_orden asc
+
+102 ->  SELECT ESTA_DESC, ESTA_CODI FROM ESTADO ORDER BY 1
+
+103 -> 
+104 -> 
+105 -> 
+106 ->  set datestyle='ISO'
+
+107 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606324991oappID'
+
+108 ->  select oid,typname from pg_type
+
+109 ->  select * from carpeta order by carp_orden asc
+
+110 ->  select count(*) as "leidos", 2 as esta_codi from radicado where esta_codi=2 and radi_usua_actu=50013493 and radi_leido = 0 and radi_nume_radi not in (select radi_nume_radi from tarea where estado=1 and usua_codi_ori=50013493) group by 2
+
+111 -> 
+112 -> 
+113 ->  set datestyle='ISO'
+
+114 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013492 and usua_sesion LIKE '10o254o12o105oU1709079246o1606324991oappID'
+
+115 ->  select oid,typname from pg_type
+
+116 ->  select * from radicado where radi_nume_radi=20200000200000161361
+
+117 ->  select trd_codi from trd_radicado where radi_nume_radi=20200000200000161361 and depe_codi=20
+
+118 ->  select cat_descr, cat_codi from categoria order by cat_descr
+
+119 ->  select cod_descripcion, cod_codi from codificacion where inst_codi in (0,4) order by cod_descripcion
+
+120 -> 
+121 -> 
+122 -> 
+123 ->  set datestyle='ISO'
+
+124 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013494 and usua_sesion LIKE '10o254o12o105oU1709079246o1606324991oappID'
+
+125 ->  select oid,typname from pg_type
+
+126 ->  select * from radicado where radi_nume_radi=20200000200000161364
+
+127 ->  select * from datos_usuarios where  usua_codi=50013493
+
+128 ->  select fecha_maxima from tarea where radi_nume_radi in (20200000200000161361) and usua_codi_dest = 50013493
+
+129 ->  select radi_leido as dato from RADICADO where RADI_NUME_RADI=20200000200000161365
+
+130 ->  select tarea_codi as num from tarea where radi_nume_radi=20200000200000161361 and 50013496 in (usua_codi_dest,usua_codi_ori)
+
+131 ->  select * from anexos_tipo where anex_tipo_estado=1
+
+132 -> 
+133 -> 
+134 -> 
+135 ->  set datestyle='ISO'
+
+136 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606324991oappID'
+
+137 ->  select oid,typname from pg_type
+
+138 -> 
+139 -> 
+140 -> 
+141 ->  set datestyle='ISO'
+
+142 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606324991oappID'
+
+143 ->  select oid,typname from pg_type
+
+144 -> 
+145 ->  select r.radi_nume_text,r.radi_nume_radi,r.radi_leido , hd.hist_referencia,r.radi_cuentai, now()::date-hd.hist_referencia::date from (select radi_nume_radi, radi_nume_text,radi_cuentai,radi_leido,radi_fech_radi from radicado where esta_codi=2 and radi_inst_actu = 4 and radi_usua_actu=50013566 and radi_nume_radi not in (select radi_nume_radi from tarea where estado=1 and usua_codi_ori=50013566)) as r left outer join (select radi_nume_radi, max(hist_codi) as hist_codi from hist_eventos where sgd_ttr_codigo = 9 and usua_codi_dest = 50013566 group by 1) as h on  r.radi_nume_radi=h.radi_nume_radi left outer join hist_eventos hd on hd.hist_codi=h.hist_codi where h.radi_nume_radi is not null order by r.radi_fech_radi limit 20 offset 0
+
+146 -> 
+147 -> 
+148 -> 
+149 ->  set datestyle='ISO'
+
+150 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013566 and usua_sesion LIKE '10o254o12o104oU1718752701o1606312938oappID'
+
+151 ->  select oid,typname from pg_type
+
+152 ->  select * from carpeta order by carp_orden asc
+
+153 ->  SELECT ESTA_DESC, ESTA_CODI FROM ESTADO ORDER BY 1
+
+154 -> 
+155 -> 
+156 ->  set datestyle='ISO'
+
+157 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013566 and usua_sesion LIKE '10o254o12o104oU1718752701o1606312938oappID'
+
+158 ->  select oid,typname from pg_type
+
+159 ->  select * from carpeta order by carp_orden asc
+
+160 ->  SELECT ESTA_DESC, ESTA_CODI FROM ESTADO ORDER BY 1
+
+161 -> 
+162 -> 
+163 -> 
+164 ->  set datestyle='ISO'
+
+165 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013566 and usua_sesion LIKE '10o254o12o104oU1718752701o1606312938oappID'
+
+166 -> 
+167 -> 
+168 -> 
+169 ->  Select usua_cedula, usua_pasw from usuarios where usua_email = 'patricio.guerrero@epn.edu.ec' and usua_esta = 1 and usua_cedula <> '0000000000' limit 1
+
+170 -> 
+171 -> 
+172 -> 
+173 ->  Select usua_cedula, usua_pasw from usuarios where usua_email = '' and usua_esta = 1 and usua_cedula <> '0000000000' limit 1
+
+174 -> 
+175 -> 
+176 ->  set datestyle='ISO'
+
+177 ->  SELECT usua_codi, usua_pasw FROM usuario WHERE usua_login='U1709079246'
+
+178 ->  select oid,typname from pg_type
+
+179 ->  SELECT *, (('2020-11-25 13:23:11.644783'::timestamp)-usua_fech_sesion) as "tiempo"
+
+	                  FROM usuarios_sesion WHERE usua_codi=50013493
+
+180 ->  INSERT INTO LOG_ACCESO (FECHA,USUARIO,IP,INTENTOS,ACCESO) VALUES (('2020-11-25 13:23:11.644783'::timestamp),E'U1709079246',E' -  - 10.254.12.105',2,1)
+
+181 ->  UPDATE USUARIOS_SESION SET USUA_FECH_SESION=('2020-11-25 13:23:11.644783'::timestamp),USUA_INTENTOS=1 WHERE USUA_CODI=50013493
+
+182 ->  SELECT * FROM USUARIO WHERE USUA_LOGIN ='U1709079246' AND (USUA_PASW ='f817c83f4bef3217751977e22c' or USUA_NUEVO=0) and (inst_estado=1 or usua_login like 'UADM%') order by tipo_usuario asc, usua_codi asc
+
+183 ->  select usua_codi_jefe from bandeja_compartida where usua_codi=50013493
+
+184 ->  select p.nombre, count(pc.id_permiso) as permiso
+
+	                from permiso p left outer join permiso_usuario pc on p.id_permiso=pc.id_permiso
+
+	                and pc.usua_codi=50013493 group by p.nombre
+
+185 ->  UPDATE USUARIOS_SESION SET USUA_SESION=E'10o254o12o105oU1709079246o1606324991oappID',USUA_FECH_SESION=('2020-11-25 13:23:11.644783'::timestamp),USUA_INTENTOS=0,IP_CLIENTE=E' -  - 10.254.12.105' WHERE USUA_CODI=50013493
+
+186 ->  insert into log (fecha, usua_codi, tabla, sentencia, tipo) 
+
+					values (('2020-11-25 13:23:11.644783'::timestamp), 50013493,'USUARIOS_SESION', E'UPDATE USUARIOS_SESION SET USUA_SESION=E\'10o254o12o105oU1709079246o1606324991oappID\',USUA_FECH_SESION=(\'2020-11-25 13:23:11.644783\'::timestamp),USUA_INTENTOS=0,IP_CLIENTE=E\' -  - 10.254.12.105\' WHERE USUA_CODI=50013493', 1)
+
+187 -> 
+188 -> 
+189 -> 
+190 -> 
+191 ->  set datestyle='ISO'
+
+192 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606324991oappID'
+
+193 ->  select oid,typname from pg_type
+
+194 -> 
+195 -> 
+196 -> 
+197 ->  set datestyle='ISO'
+
+198 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606324991oappID'
+
+199 ->  select oid,typname from pg_type
+
+200 ->  select usua_codi, inst_nombre, depe_nomb, usua_cargo, usua_nombre
+
+	        from usuario
+
+	        where usua_login like upper('U1709079246') and usua_esta=1 
+
+	        order by usua_nombre, inst_nombre
+
+201 -> 
+202 -> 
+203 -> 
+204 ->  set datestyle='ISO'
+
+205 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606324991oappID'
+
+206 ->  select oid,typname from pg_type
+
+207 ->  select r.radi_nume_text,r.radi_nume_radi,r.radi_leido , hd.hist_referencia,r.radi_cuentai, now()::date-hd.hist_referencia::date from (select radi_nume_radi, radi_nume_text,radi_cuentai,radi_leido,radi_fech_radi from radicado where esta_codi=2 and radi_inst_actu = 4 and radi_usua_actu=50013493 and radi_nume_radi not in (select radi_nume_radi from tarea where estado=1 and usua_codi_ori=50013493)) as r left outer join (select radi_nume_radi, max(hist_codi) as hist_codi from hist_eventos where sgd_ttr_codigo = 9 and usua_codi_dest = 50013493 group by 1) as h on  r.radi_nume_radi=h.radi_nume_radi left outer join hist_eventos hd on hd.hist_codi=h.hist_codi where h.radi_nume_radi is not null order by r.radi_fech_radi limit 20 offset 0
+
+208 -> 
+209 -> 
+210 -> 
+211 ->  set datestyle='ISO'
+
+212 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606324991oappID'
+
+213 ->  select oid,typname from pg_type
+
+214 ->  select * from carpeta order by carp_orden asc
+
+215 -> 
+216 -> 
+217 -> 
+218 ->  set datestyle='ISO'
+
+219 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606324991oappID'
+
+220 ->  select oid,typname from pg_type
+
+221 ->  select * from carpeta order by carp_orden asc
+
+222 ->  SELECT ESTA_DESC, ESTA_CODI FROM ESTADO ORDER BY 1
+
+223 -> 
+224 -> 
+225 -> 
+226 ->  set datestyle='ISO'
+
+227 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606324991oappID'
+
+228 ->  select oid,typname from pg_type
+
+229 -> 
+230 ->  set datestyle='ISO'
+
+231 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606324991oappID'
+
+232 -> 
+233 -> 
+234 -> 
+235 ->  set datestyle='ISO'
+
+236 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606324991oappID'
+
+237 ->  select oid,typname from pg_type
+
+238 ->  select coalesce(max(anex_numero),0) as num from anexos where anex_radi_nume=20200000200000161361
+
+239 ->  select ANEX_TIPO_CODI from anexos_tipo where upper(anex_tipo_ext) like 'PNG'
+
+240 ->  begin
+
+241 ->  UPDATE ANEXOS SET ANEX_RADI_NUME=20200000200000161361,ANEX_TIPO=17,ANEX_TAMANO=93.307,ANEX_DESC=E'',ANEX_NUMERO=9,ANEX_PATH=E'/2020/000020/docs/20200000200000161361_00009.png',ANEX_BORRADO='N',ANEX_FECHA=('2020-11-25 14:24:18.781558'::timestamp),ANEX_NOMBRE=E'cxbvcx.png',ANEX_USUA_CODI=50013493,ANEX_FISICO=0 WHERE ANEX_CODIGO=E'20200000200000161361_00009'
+
+242 ->  INSERT INTO ANEXOS (ANEX_RADI_NUME,ANEX_CODIGO,ANEX_TIPO,ANEX_TAMANO,ANEX_DESC,ANEX_NUMERO,ANEX_PATH,ANEX_BORRADO,ANEX_FECHA,ANEX_NOMBRE,ANEX_USUA_CODI,ANEX_FISICO) VALUES (20200000200000161361,E'20200000200000161361_00009',17,93.307,E'',9,E'/2020/000020/docs/20200000200000161361_00009.png','N',('2020-11-25 14:24:18.781558'::timestamp),E'cxbvcx.png',50013493,0)
+
+243 ->  insert into log (fecha, usua_codi, tabla, sentencia, tipo) 
+
+					values (('2020-11-25 14:24:18.781558'::timestamp), 50013493,'ANEXOS', E'INSERT INTO ANEXOS (ANEX_RADI_NUME,ANEX_CODIGO,ANEX_TIPO,ANEX_TAMANO,ANEX_DESC,ANEX_NUMERO,ANEX_PATH,ANEX_BORRADO,ANEX_FECHA,ANEX_NOMBRE,ANEX_USUA_CODI,ANEX_FISICO) VALUES (20200000200000161361,E\'20200000200000161361_00009\',17,93.307,E\'\',9,E\'/2020/000020/docs/20200000200000161361_00009.png\',\'N\',(\'2020-11-25 14:24:18.781558\'::timestamp),E\'cxbvcx.png\',50013493,0)', 2)
+
+244 ->  commit
+
+245 ->  insert into HIST_EVENTOS(RADI_NUME_RADI,USUA_CODI_ORI,USUA_CODI_DEST,SGD_TTR_CODIGO,HIST_OBSE,HIST_FECH) values (20200000200000161361,50013493,50013493,66,E'cxbvcx.png',('2020-11-25 14:24:18.781558'::timestamp))
+
+246 -> 
+247 -> 
+248 -> 
+249 ->  set datestyle='ISO'
+
+250 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606324991oappID'
+
+251 ->  select oid,typname from pg_type
+
+252 ->  select * from radicado where radi_nume_radi=20200000200000161361
+
+253 ->  select r.*, e.esta_desc, tr.trad_descr,
+
+	                     radi_fech_asig::date - CURRENT_DATE as num_dias
+
+	                     from radicado r left outer join estado e on r.esta_codi=e.esta_codi
+
+	                     left outer join tiporad tr on r.radi_tipo = tr.trad_codigo
+
+	                     where r.RADI_NUME_RADI=20200000200000161361
+
+254 ->  select * from datos_usuarios where  usua_codi=50013493
+
+255 ->  select fecha_maxima from tarea where radi_nume_radi in (20200000200000161361) and usua_codi_dest = 50013493
+
+256 ->  select radi_leido as dato from RADICADO where RADI_NUME_RADI=20200000200000161361
+
+257 ->  select tarea_codi as num from tarea where radi_nume_radi=20200000200000161361 and 50013493 in (usua_codi_dest,usua_codi_ori)
+
+258 ->  select r.*, e.esta_desc, tr.trad_descr,
+
+	                     radi_fech_asig::date - CURRENT_DATE as num_dias
+
+	                     from radicado r left outer join estado e on r.esta_codi=e.esta_codi
+
+	                     left outer join tiporad tr on r.radi_tipo = tr.trad_codigo
+
+	                     where r.RADI_NUME_RADI=20200000200000161361
+
+259 ->  select * from anexos_tipo where anex_tipo_estado=1
+
+260 -> 
+261 -> 
+262 -> 
+263 ->  set datestyle='ISO'
+
+264 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606324991oappID'
+
+265 ->  select oid,typname from pg_type
+
+266 ->  select anex_codigo, anex_nombre, anex_desc, anex_path as archivo
+
+			,anex_tamano ,usua_nombre ,anex_fecha, anex_fisico
+
+			from anexos left outer join usuario on anex_usua_codi=usua_codi
+
+			where anex_radi_nume=20200000200000099500 and anex_borrado='N'
+
+			order by anex_codigo
+
+267 ->  select oid,typname from pg_type
+
+268 ->  select coalesce(max(anex_numero),0) as num from anexos where anex_radi_nume=20200000200000161361
+
+269 ->  select ANEX_TIPO_CODI from anexos_tipo where upper(anex_tipo_ext) like 'PNG'
+
+270 ->  begin
+
+271 ->  UPDATE ANEXOS SET ANEX_RADI_NUME=20200000200000161361,ANEX_TIPO=17,ANEX_TAMANO=93.307,ANEX_DESC=E'',ANEX_NUMERO=9,ANEX_PATH=E'/2020/000020/docs/20200000200000161361_00009.png',ANEX_BORRADO='N',ANEX_FECHA=('2020-11-25 14:24:18.781558'::timestamp),ANEX_NOMBRE=E'cxbvcx.png',ANEX_USUA_CODI=50013493,ANEX_FISICO=0 WHERE ANEX_CODIGO=E'20200000200000161361_00009'
+
+272 ->  INSERT INTO ANEXOS (ANEX_RADI_NUME,ANEX_CODIGO,ANEX_TIPO,ANEX_TAMANO,ANEX_DESC,ANEX_NUMERO,ANEX_PATH,ANEX_BORRADO,ANEX_FECHA,ANEX_NOMBRE,ANEX_USUA_CODI,ANEX_FISICO) VALUES (20200000200000161361,E'20200000200000161361_00009',17,93.307,E'',9,E'/2020/000020/docs/20200000200000161361_00009.png','N',('2020-11-25 14:24:18.781558'::timestamp),E'cxbvcx.png',50013493,0)
+
+273 ->  commit
+
+274 ->  insert into HIST_EVENTOS(RADI_NUME_RADI,USUA_CODI_ORI,USUA_CODI_DEST,SGD_TTR_CODIGO,HIST_OBSE,HIST_FECH) values (20200000200000161361,50013493,50013493,66,E'cxbvcx.png',('2020-11-25 14:24:18.781558'::timestamp))
+
+275 -> 
+276 ->  select count(*) as "leidos", 2 as esta_codi from radicado where esta_codi=2 and radi_usua_actu=50013493 and radi_leido = 0 and radi_nume_radi not in (select radi_nume_radi from tarea where estado=1 and usua_codi_ori=50013493) group by 2
+
+277 -> 
+278 -> 
+279 -> 
+280 ->  set datestyle='ISO'
+
+281 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+282 ->  select oid,typname from pg_type
+
+283 ->  select * from radicado where radi_nume_radi=20200000200000161361
+
+284 -> 
+285 -> 
+286 ->  set datestyle='ISO'
+
+287 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013496 and usua_sesion LIKE '10o254o12o105oU1709079246o1606324991oappID'
+
+288 ->  select oid,typname from pg_type
+
+289 ->  select * from radicado where radi_nume_radi=20200000200000161366
+
+290 ->  select * from datos_usuarios where  usua_codi=50013493
+
+291 ->  select fecha_maxima from tarea where radi_nume_radi in (20200000200000161361) and usua_codi_dest = 50013493
+
+292 ->  select radi_leido as dato from RADICADO where RADI_NUME_RADI=20200000200000161367
+
+293 ->  select tarea_codi as num from tarea where radi_nume_radi=20200000200000161361 and 50013493 in (usua_codi_dest,usua_codi_ori)
+
+294 ->  select * from anexos_tipo where anex_tipo_estado=1
+
+295 -> 
+296 -> 
+297 -> 
+298 ->  set datestyle='ISO'
+
+299 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606324991oappID'
+
+300 ->  select oid,typname from pg_type
+
+301 -> 
+302 -> 
+303 -> 
+304 ->  set datestyle='ISO'
+
+305 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606324991oappID'
+
+306 ->  select oid,typname from pg_type
+
+307 ->  --
+
+	    select count(*) as "leidos", esta_codi from radicado where esta_codi in (1) and radi_leido = 0 and radi_usua_actu=50013493 group by esta_codi
+
+308 -> 
+309 -> 
+310 -> 
+311 ->  set datestyle='ISO'
+
+312 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+313 ->  select oid,typname from pg_type
+
+314 -> 
+315 ->  set datestyle='ISO'
+
+316 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=-99 and usua_sesion LIKE 'nni0ai6f77sh7th6sq73r4ljm1'
+
+317 ->  select oid,typname from pg_type
+
+318 ->  INSERT INTO LOG_SESION (FECHA,USUARIO,DESCRIPCION) VALUES (('2020-11-10 15:30:55.231395'::timestamp),E' - ',E'nni0ai6f77sh7th6sq73r4ljm1Se perdiÃ³ la sesiÃ³n para el usuario de la mÃ¡quina  -  - 10.254.12.104')
+
+319 -> 
+320 -> 
+321 -> 
+322 ->  set datestyle='ISO'
+
+323 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=-99 and usua_sesion LIKE 'nni0ai6f77sh7th6sq73r4ljm1'
+
+324 ->  select oid,typname from pg_type
+
+325 ->  INSERT INTO LOG_SESION (FECHA,USUARIO,DESCRIPCION) VALUES (('2020-11-10 15:30:55.274403'::timestamp),E' - ',E'nni0ai6f77sh7th6sq73r4ljm1Se perdiÃ³ la sesiÃ³n para el usuario de la mÃ¡quina  -  - 10.254.12.104')
+
+326 -> 
+327 -> 
+328 -> 
+329 ->  set datestyle='ISO'
+
+330 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=-99 and usua_sesion LIKE 'nni0ai6f77sh7th6sq73r4ljm1'
+
+331 ->  select oid,typname from pg_type
+
+332 ->  INSERT INTO LOG_SESION (FECHA,USUARIO,DESCRIPCION) VALUES (('2020-11-10 15:30:55.321115'::timestamp),E' - ',E'nni0ai6f77sh7th6sq73r4ljm1Se perdiÃ³ la sesiÃ³n para el usuario de la mÃ¡quina  -  - 10.254.12.104')
+
+333 -> 
+334 -> 
+335 -> 
+336 ->  set datestyle='ISO'
+
+337 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=-99 and usua_sesion LIKE 'nni0ai6f77sh7th6sq73r4ljm1'
+
+338 ->  select oid,typname from pg_type
+
+339 ->  INSERT INTO LOG_SESION (FECHA,USUARIO,DESCRIPCION) VALUES (('2020-11-10 15:30:55.376619'::timestamp),E' - ',E'nni0ai6f77sh7th6sq73r4ljm1Se perdiÃ³ la sesiÃ³n para el usuario de la mÃ¡quina  -  - 10.254.12.104')
+
+340 -> 
+341 -> 
+342 -> 
+343 -> 
+344 -> 
+345 ->  set datestyle='ISO'
+
+346 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606324991oappID'
+
+347 ->  select oid,typname from pg_type
+
+348 ->  select anex_codigo, anex_nombre, anex_desc, anex_path as archivo
+
+			,anex_tamano ,usua_nombre ,anex_fecha, anex_fisico
+
+			from anexos left outer join usuario on anex_usua_codi=usua_codi
+
+			where anex_radi_nume=20200000200000161361 and anex_borrado='N'
+
+			order by anex_codigo
+
+349 -> 
+350 -> 
+351 -> 
+352 ->  set datestyle='ISO'
+
+353 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606324991oappID'
+
+354 ->  select oid,typname from pg_type
+
+355 -> 
+356 -> 
+357 -> 
+358 ->  Select usua_cedula, usua_pasw from usuarios where usua_email = 'patricio.guerrero@epn.edu.ec' and usua_esta = 1 and usua_cedula <> '0000000000' limit 1
+
+359 -> 
+360 -> 
+361 -> 
+362 ->  select * from products where category = 'gifts' or 1=1--' and released = 1
+
+363 -> 
+364 -> 
+365 ->  set datestyle='ISO'
+
+366 ->  SELECT usua_codi, usua_pasw FROM usuario WHERE usua_login='U1709079246'
+
+367 ->  select oid,typname from pg_type
+
+368 ->  SELECT *, (('2020-11-25 14:26:29.987902'::timestamp)-usua_fech_sesion) as "tiempo"
+
+	                  FROM usuarios_sesion WHERE usua_codi=50013493
+
+369 ->  INSERT INTO LOG_ACCESO (FECHA,USUARIO,IP,INTENTOS,ACCESO) VALUES (('2020-11-25 14:26:29.987902'::timestamp),E'U1709079246',E' -  - 10.254.12.105',1,1)
+
+370 ->  UPDATE USUARIOS_SESION SET USUA_FECH_SESION=('2020-11-25 14:26:29.987902'::timestamp),USUA_INTENTOS=1 WHERE USUA_CODI=50013493
+
+371 ->  SELECT * FROM USUARIO WHERE USUA_LOGIN ='U1709079246' AND (USUA_PASW ='f817c83f4bef3217751977e22c' or USUA_NUEVO=0) and (inst_estado=1 or usua_login like 'UADM%') order by tipo_usuario asc, usua_codi asc
+
+372 ->  select usua_codi_jefe from bandeja_compartida where usua_codi=50013493
+
+373 ->  select p.nombre, count(pc.id_permiso) as permiso
+
+	                from permiso p left outer join permiso_usuario pc on p.id_permiso=pc.id_permiso
+
+	                and pc.usua_codi=50013493 group by p.nombre
+
+374 ->  UPDATE USUARIOS_SESION SET USUA_SESION=E'10o254o12o105oU1709079246o1606325190oappID',USUA_FECH_SESION=('2020-11-25 14:26:29.987902'::timestamp),USUA_INTENTOS=0,IP_CLIENTE=E' -  - 10.254.12.105' WHERE USUA_CODI=50013493
+
+375 ->  insert into log (fecha, usua_codi, tabla, sentencia, tipo) 
+
+					values (('2020-11-25 14:26:29.987902'::timestamp), 50013493,'USUARIOS_SESION', E'UPDATE USUARIOS_SESION SET USUA_SESION=E\'10o254o12o105oU1709079246o1606325190oappID\',USUA_FECH_SESION=(\'2020-11-25 14:26:29.987902\'::timestamp),USUA_INTENTOS=0,IP_CLIENTE=E\' -  - 10.254.12.105\' WHERE USUA_CODI=50013493', 1)
+
+376 -> 
+377 -> 
+378 -> 
+379 -> 
+380 ->  set datestyle='ISO'
+
+381 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+382 ->  select oid,typname from pg_type
+
+383 -> 
+384 -> 
+385 -> 
+386 ->  set datestyle='ISO'
+
+387 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+388 ->  select oid,typname from pg_type
+
+389 ->  select usua_codi, inst_nombre, depe_nomb, usua_cargo, usua_nombre
+
+	        from usuario
+
+	        where usua_login like upper('U1709079246') and usua_esta=1 
+
+	        order by usua_nombre, inst_nombre
+
+390 -> 
+391 -> 
+392 -> 
+393 ->  set datestyle='ISO'
+
+394 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+395 ->  select oid,typname from pg_type
+
+396 ->  select * from carpeta order by carp_orden asc
+
+397 ->  SELECT ESTA_DESC, ESTA_CODI FROM ESTADO ORDER BY 1
+
+398 -> 
+399 -> 
+400 -> 
+401 ->  set datestyle='ISO'
+
+402 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+403 ->  select count(*) "leidos", 6 as esta_codi from radicado where esta_codi=6 and radi_nume_radi=radi_nume_temp and radi_leido = 0 and radi_usua_actu=50013493
+
+404 -> 
+405 -> 
+406 -> 
+407 ->  set datestyle='ISO'
+
+408 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+409 ->  select oid,typname from pg_type
+
+410 ->  select * from radicado where radi_nume_radi=20200000200000099490
+
+411 ->  select r.*, e.esta_desc, tr.trad_descr,
+
+	                     radi_fech_asig::date - CURRENT_DATE as num_dias
+
+	                     from radicado r left outer join estado e on r.esta_codi=e.esta_codi
+
+	                     left outer join tiporad tr on r.radi_tipo = tr.trad_codigo
+
+	                     where r.RADI_NUME_RADI=20200000200000099490
+
+412 ->  select * from datos_usuarios where  usua_codi=50013493
+
+413 ->  select fecha_maxima from tarea where radi_nume_radi in (20200000200000099490) and usua_codi_dest = 50013493
+
+414 ->  select radi_leido as dato from RADICADO where RADI_NUME_RADI=20200000200000099490
+
+415 ->  select tarea_codi as num from tarea where radi_nume_radi=20200000200000099490 and 50013493 in (usua_codi_dest,usua_codi_ori)
+
+416 ->  select trad_descr, trad_codigo from tiporad where trad_tipo='S' and trad_inst_codi in (0,4) order by trad_descr
+
+417 ->  select usua_nombre, usua_apellido, usua_abr_titulo, usua_cargo, usua_institucion, usua_area, inst_codi
+
+			from usuarios_radicado where radi_nume_radi=20200000200000099490 and radi_usua_tipo=1
+
+418 ->  select usua_nombre, usua_apellido, usua_abr_titulo, usua_cargo, usua_institucion, usua_area, inst_codi
+
+			from usuarios_radicado where radi_nume_radi=20200000200000099490 and radi_usua_tipo=2
+
+419 ->  select usua_nombre, usua_apellido, usua_abr_titulo, usua_cargo, usua_institucion, usua_area, inst_codi
+
+			from usuarios_radicado where radi_nume_radi=20200000200000099490 and radi_usua_tipo=3
+
+420 ->  select trd_codi from trd_radicado where radi_nume_radi=20200000200000099490 and depe_codi=20
+
+421 ->  select cat_descr, cat_codi from categoria order by cat_descr
+
+422 ->  select cod_descripcion, cod_codi from codificacion where inst_codi in (0,4) order by cod_descripcion
+
+423 -> 
+424 -> 
+425 -> 
+426 ->  set datestyle='ISO'
+
+427 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+428 ->  select oid,typname from pg_type
+
+429 ->  select * from radicado where radi_nume_radi=20200000200000099490
+
+430 ->  select r.*, e.esta_desc, tr.trad_descr,
+
+	                     radi_fech_asig::date - CURRENT_DATE as num_dias
+
+	                     from radicado r left outer join estado e on r.esta_codi=e.esta_codi
+
+	                     left outer join tiporad tr on r.radi_tipo = tr.trad_codigo
+
+	                     where r.RADI_NUME_RADI=20200000200000099490
+
+431 ->  select * from datos_usuarios where  usua_codi=50013493
+
+432 ->  select fecha_maxima from tarea where radi_nume_radi in (20200000200000099490) and usua_codi_dest = 50013493
+
+433 ->  select radi_leido as dato from RADICADO where RADI_NUME_RADI=20200000200000099490
+
+434 ->  select tarea_codi as num from tarea where radi_nume_radi=20200000200000099490 and 50013493 in (usua_codi_dest,usua_codi_ori)
+
+435 ->  select radi_leido as dato from RADICADO where RADI_NUME_RADI=20200000200000099490
+
+436 ->  set datestyle='ISO'
+
+437 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=-99 and usua_sesion LIKE 'nni0ai6f77sh7th6sq73r4ljm1'
+
+438 ->  select oid,typname from pg_type
+
+439 ->  INSERT INTO LOG_SESION (FECHA,USUARIO,DESCRIPCION) VALUES (('2020-11-10 15:30:55.415312'::timestamp),E' - ',E'nni0ai6f77sh7th6sq73r4ljm1Se perdiÃ³ la sesiÃ³n para el usuario de la mÃ¡quina  -  - 10.254.12.104')
+
+440 -> 
+441 -> 
+442 -> 
+443 ->  set datestyle='ISO'
+
+444 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=-99 and usua_sesion LIKE 'nni0ai6f77sh7th6sq73r4ljm1'
+
+445 ->  select oid,typname from pg_type
+
+446 ->  INSERT INTO LOG_SESION (FECHA,USUARIO,DESCRIPCION) VALUES (('2020-11-10 15:30:55.459174'::timestamp),E' - ',E'nni0ai6f77sh7th6sq73r4ljm1Se perdiÃ³ la sesiÃ³n para el usuario de la mÃ¡quina  -  - 10.254.12.104')
+
+447 -> 
+448 -> 
+449 -> 
+450 ->  set datestyle='ISO'
+
+451 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=-99 and usua_sesion LIKE 'nni0ai6f77sh7th6sq73r4ljm1'
+
+452 ->  select oid,typname from pg_type
+
+453 ->  INSERT INTO LOG_SESION (FECHA,USUARIO,DESCRIPCION) VALUES (('2020-11-10 15:30:55.506576'::timestamp),E' - ',E'nni0ai6f77sh7th6sq73r4ljm1Se perdiÃ³ la sesiÃ³n para el usuario de la mÃ¡quina  -  - 10.254.12.104')
+
+454 -> 
+455 -> 
+456 -> 
+457 ->  set datestyle='ISO'
+
+458 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=-99 and usua_sesion LIKE 'nni0ai6f77sh7th6sq73r4ljm1'
+
+459 ->  select oid,typname from pg_type
+
+460 ->  INSERT INTO LOG_SESION (FECHA,USUARIO,DESCRIPCION) VALUES (('2020-11-10 15:30:55.550050'::timestamp),E' - ',E'nni0ai6f77sh7th6sq73r4ljm1Se perdiÃ³ la sesiÃ³n para el usuario de la mÃ¡quina  -  - 10.254.12.104')
+
+461 -> 
+462 ->  set datestyle='ISO'
+
+463 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=-99 and usua_sesion LIKE 'nni0ai6f77sh7th6sq73r4ljm1'
+
+464 ->  select oid,typname from pg_type
+
+465 ->  INSERT INTO LOG_SESION (FECHA,USUARIO,DESCRIPCION) VALUES (('2020-11-10 15:30:55.598140'::timestamp),E' - ',E'nni0ai6f77sh7th6sq73r4ljm1Se perdiÃ³ la sesiÃ³n para el usuario de la mÃ¡quina  -  - 10.254.12.104')
+
+466 -> 
+467 ->  select usua_nombre, usua_apellido, usua_abr_titulo, usua_cargo, usua_institucion
+
+			from usuarios_radicado where radi_nume_radi=20200000200000099490 and radi_usua_tipo=1
+
+468 ->  select usua_nombre, usua_apellido, usua_abr_titulo, usua_cargo, usua_institucion
+
+			from usuarios_radicado where radi_nume_radi=20200000200000099490 and radi_usua_tipo=2
+
+469 -> 
+470 -> 
+471 -> 
+472 ->  set datestyle='ISO'
+
+473 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+474 ->  select oid,typname from pg_type
+
+475 ->  select * from radicado where radi_nume_radi=20200000200000099490
+
+476 ->  select r.*, e.esta_desc, tr.trad_descr,
+
+	                     radi_fech_asig::date - CURRENT_DATE as num_dias
+
+	                     from radicado r left outer join estado e on r.esta_codi=e.esta_codi
+
+	                     left outer join tiporad tr on r.radi_tipo = tr.trad_codigo
+
+	                     where r.RADI_NUME_RADI=20200000200000099490
+
+477 ->  select * from datos_usuarios where  usua_codi=50013493
+
+478 ->  select fecha_maxima from tarea where radi_nume_radi in (20200000200000099490) and usua_codi_dest = 50013493
+
+479 ->  select radi_leido as dato from RADICADO where RADI_NUME_RADI=20200000200000099490
+
+480 ->  select tarea_codi as num from tarea where radi_nume_radi=20200000200000099490 and 50013493 in (usua_codi_dest,usua_codi_ori)
+
+481 ->  select r.*, e.esta_desc, tr.trad_descr,
+
+	                     radi_fech_asig::date - CURRENT_DATE as num_dias
+
+	                     from radicado r left outer join estado e on r.esta_codi=e.esta_codi
+
+	                     left outer join tiporad tr on r.radi_tipo = tr.trad_codigo
+
+	                     where r.RADI_NUME_RADI=20200000200000099490
+
+482 ->  select * from anexos_tipo where anex_tipo_estado=1
+
+483 -> 
+484 -> 
+485 -> 
+486 ->  set datestyle='ISO'
+
+487 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+488 ->  select oid,typname from pg_type
+
+489 ->  select anex_codigo, anex_nombre, anex_desc, anex_path as archivo
+
+			,anex_tamano ,usua_nombre ,anex_fecha, anex_fisico
+
+			from anexos left outer join usuario on anex_usua_codi=usua_codi
+
+			where anex_radi_nume=20200000200000099490 and anex_borrado='N'
+
+			order by anex_codigo
+
+490 -> 
+491 -> 
+492 -> 
+493 ->  set datestyle='ISO'
+
+494 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+495 ->  select oid,typname from pg_type
+
+496 ->  select * from carpeta order by carp_orden asc
+
+497 ->  SELECT ESTA_DESC, ESTA_CODI FROM ESTADO ORDER BY 1
+
+498 -> 
+499 -> 
+500 -> 
+501 ->  set datestyle='ISO'
+
+502 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+503 ->  select oid,typname from pg_type
+
+504 -> 
+505 -> 
+506 -> 
+507 ->  set datestyle='ISO'
+
+508 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606324991oappID'
+
+509 ->  select oid,typname from pg_type
+
+510 -> 
+511 -> 
+512 -> 
+513 ->  Select usua_cedula, usua_pasw from usuarios where usua_email = 'patricio.guerrero@epn.edu.ec' and usua_esta = 1 and usua_cedula <> '0000000000' limit 1
+
+514 -> 
+515 -> 
+516 -> 
+517 ->  Select usua_cedula, usua_pasw from usuarios where usua_email = '' and usua_esta = 1 and usua_cedula <> '0000000000' limit 1
+
+518 -> 
+519 -> 
+520 ->  set datestyle='ISO'
+
+521 ->  SELECT usua_codi, usua_pasw FROM usuario WHERE usua_login='U1709079246'
+
+522 ->  select oid,typname from pg_type
+
+523 ->  SELECT *, (('2020-11-25 14:26:29.987902'::timestamp)-usua_fech_sesion) as "tiempo" FROM usuarios_sesion WHERE usua_codi=50013493
+
+524 ->  INSERT INTO LOG_ACCESO (FECHA,USUARIO,IP,INTENTOS,ACCESO) VALUES (('2020-11-25 14:26:29.987902'::timestamp),E'U1709079246',E' -  - 10.254.12.105',1,1)
+
+525 ->  UPDATE USUARIOS_SESION SET USUA_FECH_SESION=('2020-11-25 14:26:29.987902'::timestamp),USUA_INTENTOS=1 WHERE USUA_CODI=50013493
+
+526 ->  SELECT * FROM USUARIO WHERE USUA_LOGIN ='U1709079246' AND (USUA_PASW ='f817c83f4bef3217751977e22c' or USUA_NUEVO=0) and (inst_estado=1 or usua_login like 'UADM%') order by tipo_usuario asc, usua_codi asc
+
+527 ->  select usua_codi_jefe from bandeja_compartida where usua_codi=50013493
+
+528 ->  select p.nombre, count(pc.id_permiso) as permiso from permiso p left outer join permiso_usuario pc on p.id_permiso=pc.id_permiso and pc.usua_codi=50013493 group by p.nombre
+
+529 ->  UPDATE USUARIOS_SESION SET USUA_SESION=E'10o254o12o105oU1709079246o1606325190oappID',USUA_FECH_SESION=('2020-11-25 14:26:29.987902'::timestamp),USUA_INTENTOS=0,IP_CLIENTE=E' -  - 10.254.12.105' WHERE USUA_CODI=50013493
+
+530 ->  insert into log (fecha, usua_codi, tabla, sentencia, tipo) values (('2020-11-25 14:26:29.987902'::timestamp), 50013493,'USUARIOS_SESION', E'UPDATE USUARIOS_SESION SET USUA_SESION=E\'10o254o12o105oU1709079246o1606325190oappID\',USUA_FECH_SESION=(\'2020-11-25 14:26:29.987902\'::timestamp),USUA_INTENTOS=0,IP_CLIENTE=E\' -  - 10.254.12.105\' WHERE USUA_CODI=50013493', 1)
+
+531 -> 
+532 -> 
+533 -> 
+534 -> 
+535 ->  set datestyle='ISO'
+
+536 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+537 ->  select oid,typname from pg_type
+
+538 -> 
+539 -> 
+540 -> 
+541 ->  set datestyle='ISO'
+
+542 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+543 ->  select oid,typname from pg_type
+
+544 ->  select * from datos_usuarios where  usua_codi=50013493
+
+545 ->  select fecha_maxima from tarea where radi_nume_radi in (20200000200000161361) and usua_codi_dest = 50013493
+
+546 ->  select radi_leido as dato from RADICADO where RADI_NUME_RADI=20200000200000161361
+
+547 ->  select tarea_codi as num from tarea where radi_nume_radi=20200000200000161361 and 50013493 in (usua_codi_dest,usua_codi_ori)
+
+548 ->  select h.hist_obse, h.hist_referencia, u.usua_nomb||' '||u.usua_apellido as usua_nombre
+
+	                 from hist_eventos h left outer join usuarios u on h.usua_codi_ori=u.usua_codi
+
+	                 where h.radi_nume_radi=20200000200000161361 and h.sgd_ttr_codigo=9 and h.usua_codi_dest=50013493 order by hist_fech desc
+
+549 ->  select trad_descr, trad_codigo from tiporad where trad_tipo='S' and trad_inst_codi in (0,4) order by trad_descr
+
+550 ->  select usua_nombre, usua_apellido, usua_abr_titulo, usua_cargo, usua_institucion, usua_area, inst_codi
+
+			from usuarios_radicado where radi_nume_radi=20200000200000099500 and radi_usua_tipo=1
+
+551 ->  select usua_nombre, usua_apellido, usua_abr_titulo, usua_cargo, usua_institucion, usua_area, inst_codi
+
+			from usuarios_radicado where radi_nume_radi=20200000200000099500 and radi_usua_tipo=2
+
+552 ->  select usua_nombre, usua_apellido, usua_abr_titulo, usua_cargo, usua_institucion, usua_area, inst_codi
+
+			from usuarios_radicado where radi_nume_radi=20200000200000099500 and radi_usua_tipo=3
+
+553 ->  select trd_codi from trd_radicado where radi_nume_radi=20200000200000161361 and depe_codi=20
+
+554 ->  select cat_descr, cat_codi from categoria order by cat_descr
+
+555 ->  select cod_descripcion, cod_codi from codificacion where inst_codi in (0,4) order by cod_descripcion
+
+556 -> 
+557 -> 
+558 -> 
+559 ->  set datestyle='ISO'
+
+560 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+561 ->  select oid,typname from pg_type
+
+562 ->  select count(*) as "leidos", 2 as esta_codi from radicado where esta_codi=2 and radi_usua_actu=50013493 and radi_leido = 0 and radi_nume_radi not in (select radi_nume_radi from tarea where estado=1 and usua_codi_ori=50013493) group by 2
+
+563 -> 
+564 -> 
+565 -> 
+566 ->  set datestyle='ISO'
+
+567 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+568 ->  select oid,typname from pg_type
+
+569 ->  select * from carpeta order by carp_orden asc
+
+570 ->  SELECT ESTA_DESC, ESTA_CODI FROM ESTADO ORDER BY 1
+
+571 -> 
+572 -> 
+573 -> 
+574 ->  set datestyle='ISO'
+
+575 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+576 ->  select oid,typname from pg_type
+
+577 -> 
+578 -> 
+579 -> 
+580 ->  set datestyle='ISO'
+
+581 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+582 ->  select oid,typname from pg_type
+
+583 ->  select * from radicado where radi_nume_radi=20200000200000099490
+
+584 ->  select r.*, e.esta_desc, tr.trad_descr,
+
+	                     radi_fech_asig::date - CURRENT_DATE as num_dias
+
+	                     from radicado r left outer join estado e on r.esta_codi=e.esta_codi
+
+	                     left outer join tiporad tr on r.radi_tipo = tr.trad_codigo
+
+	                     where r.RADI_NUME_RADI=20200000200000099490
+
+585 ->  select * from datos_usuarios where  usua_codi=50013493
+
+586 ->  select fecha_maxima from tarea where radi_nume_radi in (20200000200000099490) and usua_codi_dest = 50013493
+
+587 ->  select radi_leido as dato from RADICADO where RADI_NUME_RADI=20200000200000099490
+
+588 ->  select tarea_codi as num from tarea where radi_nume_radi=20200000200000099490 and 50013493 in (usua_codi_dest,usua_codi_ori)
+
+589 ->  select r.*, e.esta_desc, tr.trad_descr,
+
+	                     radi_fech_asig::date - CURRENT_DATE as num_dias
+
+	                     from radicado r left outer join estado e on r.esta_codi=e.esta_codi
+
+	                     left outer join tiporad tr on r.radi_tipo = tr.trad_codigo
+
+	                     where r.RADI_NUME_RADI=20200000200000099490
+
+590 ->  select * from anexos_tipo where anex_tipo_estado=1
+
+591 -> 
+592 -> 
+593 -> 
+594 ->  set datestyle='ISO'
+
+595 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+596 ->  select oid,typname from pg_type
+
+597 ->  select anex_codigo, anex_nombre, anex_desc, anex_path as archivo
+
+			,anex_tamano ,usua_nombre ,anex_fecha, anex_fisico
+
+			from anexos left outer join usuario on anex_usua_codi=usua_codi
+
+			where anex_radi_nume=20200000200000099490 and anex_borrado='N'
+
+			order by anex_codigo
+
+598 -> 
+599 -> 
+600 -> 
+601 ->  set datestyle='ISO'
+
+602 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+603 ->  select oid,typname from pg_type
+
+604 ->  select * from carpeta order by carp_orden asc
+
+605 ->  SELECT ESTA_DESC, ESTA_CODI FROM ESTADO ORDER BY 1
+
+606 -> 
+607 -> 
+608 -> 
+609 ->  set datestyle='ISO'
+
+610 ->  SELECT * FROM usuarios_sesion WHERE usua_codi=50013493 and usua_sesion LIKE '10o254o12o105oU1709079246o1606325190oappID'
+
+611 ->  select oid,typname from pg_type
+
+612 ->  select table_name, table_schema, ‘a’ from information_schema.tables
+
+UNION ( select table_name, table_schema, ‘a’ from information_schema.tables ) --
+
+admin’ AND 1=0 UNION ( select table_name, table_schema, ‘a’ from information_schema.tables) --
+
+613 -> 
+614 -> 
+615 ->  set datestyle='ISO'
+
+616 ->  set datestyle='ISO'
+
+617 ->  set datestyle='ISO'
+
+618 ->  set datestyle='ISO'
+
+619 ->  set datestyle='ISO'
+
+620 ->  set datestyle='ISO'
+
+621 ->  set datestyle='ISO'
+
+622 ->  set datestyle='ISO'
+
+623 ->  set datestyle='ISO'
+
+624 ->  set datestyle='ISO'
+
+625 ->  set datestyle='ISO'
+
+626 ->  set datestyle='ISO'
+
+627 ->  set datestyle='ISO'
+
+628 ->  set datestyle='ISO'
+
+629 ->  set datestyle='ISO'
+
+630 ->  set datestyle='ISO'
+
+631 ->  set datestyle='ISO'
+
+632 ->  set datestyle='ISO'
+
+633 ->  set datestyle='ISO'    
+
+   
+
+
+
+ 
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+ 
+
+ 
+
+
+
