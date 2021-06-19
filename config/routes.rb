@@ -11,4 +11,6 @@ Rails.application.routes.draw do
     resources :logs, only: :create
     resources :queries, only: :create
   end
+
+  resources :log_files, only: :create
 end
