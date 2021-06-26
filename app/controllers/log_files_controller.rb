@@ -1,6 +1,10 @@
 class LogFilesController < ApplicationController
   def create
-    LogFile.create!(log_params)
+    begin
+      LogFile.create!(log_params)
+    rescue ActiveRecord::RecordInvalid
+      flash[:notice] = 'archivo debe tener formato .log'
+    end
 
     redirect_back(fallback_location: root_path)
   end
