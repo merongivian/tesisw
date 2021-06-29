@@ -9,7 +9,6 @@
   <%= f.hidden_field :reset_password_token %>
 
     <div class="label"> Nueva Contraseña </div>
-    <%= f.label :password, "Nueva Contraseña" %><br />
     <% if @minimum_password_length %>
       <em>(<%= @minimum_password_length %> characters minimum)</em><br />
     <% end %>
