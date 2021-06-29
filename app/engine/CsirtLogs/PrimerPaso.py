@@ -2,7 +2,7 @@ import pandas as pd
 from io import StringIO 
 import csv 
 
-f = open('LogsPostgresql/logsAtaque.log')
+f = open('LogsPostgresql/1280000.log')
 
 userAtribute = 'Tstamp:'
 id = 0
