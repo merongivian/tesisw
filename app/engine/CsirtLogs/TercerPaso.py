@@ -24,6 +24,9 @@ Valor2 = 'VALOR_DURACION'
 
 files = len(os.listdir('Ataques/temp/logs')) 
 
+for f in os.listdir('Ataques/temp/first_outliers/'):
+    os.remove(os.path.join('Ataques/temp/first_outliers/', f))
+
 #Por cada archivo csv de 5000 logs
 
 for number in range(files) :
@@ -108,10 +111,7 @@ for number in range(files) :
     print(df)  
     print(df[[Valor1,Valor2]])
 
-    # Sobreescribimos los archivos analizadas y generamos nuevos con las anomalias
-
-    for f in os.listdir('Ataques/temp/first_outliers/'):
-        os.remove(os.path.join('Ataques/temp/first_outliers/', f))
+    # Sobreescribimos los archivos analizadas y generamos nuevos con las anomalia
 
 
     df.to_csv("Ataques/temp/logs/logs_"+ str(number) + ".csv",index=False)  

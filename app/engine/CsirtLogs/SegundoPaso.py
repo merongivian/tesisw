@@ -35,7 +35,7 @@ for f in os.listdir('Ataques/temp/logs/'):
 
 for i in range(0,len(csvfile),linesPerFile):
     with open('Ataques/temp/logs/logs_' + str(filename) + '.csv', 'w+') as f:
-        if filename > 1: 
+        if filename >= 1: 
             f.write(csvfile[0]) 
         f.writelines(csvfile[i:i+linesPerFile])
     filename += 1

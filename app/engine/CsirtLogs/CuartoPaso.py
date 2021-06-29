@@ -50,7 +50,7 @@ def analizarInjection(logId):
                 print('INYECCIÓN TIPO 3 DETECTADA: Basado en el Tiempo')
                 print(query)    
             else:
-                if 'DROP table' in query:
+                if ';' in query:
                     print('-----ALERTA-----')
                     print('LOG_ID = ' + logId)
                     print('INYECCIÓN TIPO 4 DETECTADA: Piggy Backed')
@@ -76,21 +76,16 @@ def analizarInjection(logId):
         
         
 
-def postearAnomalia(base,usuario,ip,pid,fecha2,ataque,tipo, nombreQ, query, duracion):
+def postearAnomalia(base,usuario,ip,pid,fecha2,ataque,tipo):
     r = requests.post('http://localhost:3000/api/logs', data ={'nombre_base': base,
                                                                 'nombre_usuario': usuario,
                                                                 'ip_log': ip,
                                                                 'pid': pid,
-                                                                'time_stamp_log': fecha2,
+                                                                 'time_stamp_log': fecha2,
                                                                 'ataque': ataque,
-                                                                'tipo_ataque': tipo,
-                                                                'query_id': [{
-                                                                    'nombre_comando': nombreQ,
-                                                                    'comando': query,
-                                                                    'duracion': duracion
-                                                                }]}) 
-    
-'''
+                                                                'tipo_ataque': tipo}) 
+  
+
 for number in range(files+1):
 
     firstOutliers =  pd.read_csv('Ataques/temp/first_outliers/fout_' + str(number) + '.csv')
@@ -98,7 +93,8 @@ for number in range(files+1):
 
     for i in outliersLogs:
         analizarInjection(str(i))
-'''
+        postearAnomalia('pruebaf','washios','127.0.0.3','12121','Thu, 18 Jun 2021 14:07:38 UTC +00:00',False,'')
 
-postearAnomalia('pruebaf','washios','127.0.0.3','12121','Thu, 18 Jun 2021 14:07:38 UTC +00:00',True,'Tautología','SELEC','slect * from all', '1,5 ms')
+
+
 
